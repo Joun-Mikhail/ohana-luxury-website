@@ -1,28 +1,49 @@
-# OHANA Luxury Landing Page
+# OHANA — Handmade Pearl Bags & Accessories
 
-A premium one-page website for OHANA handmade pearl bags and accessories.
+> Premium landing page for [OHANA by Sara](https://www.instagram.com/ohanabysara/), a handmade pearl bag brand based in Alexandria, Egypt.
 
-## Included
-- Real OHANA logo
-- Enhanced product photos
-- WhatsApp order buttons: +20 12 29884278
-- Instagram link: https://www.instagram.com/ohanabysara/
-- Product collection section
-- Custom order form that opens WhatsApp with a ready message
-- Reviews section
-- Size guide
-- Mobile sticky CTA
+---
 
-## How to preview
-Open `index.html` in a browser.
+## Features
 
-## How to publish fast
-1. Go to Netlify.com
-2. Drag and drop this whole folder
-3. Copy the generated link
-4. Put the link in Instagram bio
+- Full single-page design with hero, collections, custom order, reviews, and size guide sections
+- WhatsApp order flow — product buttons and a custom order form both open WhatsApp with a pre-filled message
+- Scroll reveal animations and a seamless marquee ticker
+- Mobile-first responsive layout with a sticky CTA on small screens
+- Google Fonts (Cormorant Garamond + Inter) for a luxury editorial feel
+- Instagram link and direct WhatsApp contact (+20 12 29884278)
 
-## What to edit later
-- Add real prices in the product cards inside `index.html`
-- Add delivery time/deposit terms if needed
-- Replace/add more product images inside `assets/images`
+## Project structure
+
+```
+├── index.html          # Main page
+├── styles.css          # All styling (custom properties, responsive)
+├── script.js           # Interactions: order buttons, form, reveal, marquee
+└── assets/
+    ├── brand/          # Logo and favicon
+    └── images/         # Product and editorial photos
+```
+
+## Preview
+
+Open `index.html` in any browser — no build step needed.
+
+## Deploy to Netlify (fastest)
+
+1. Go to [netlify.com](https://netlify.com) and sign in
+2. Drag and drop this entire folder onto the dashboard
+3. Copy the generated URL and paste it in the Instagram bio
+
+## Customization
+
+| What | Where |
+|------|-------|
+| Prices | Product cards in `index.html` |
+| Product photos | `assets/images/` |
+| WhatsApp number | Top of `script.js` (`WHATSAPP_NUMBER`) |
+| Brand colors | CSS custom properties at the top of `styles.css` |
+| Delivery / deposit terms | Custom order section in `index.html` |
+
+---
+
+Built with plain HTML, CSS, and vanilla JavaScript — no frameworks, no dependencies.
